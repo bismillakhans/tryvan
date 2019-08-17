@@ -1,1 +1,1 @@
-web: gunicorn tryvan.wsgi --log-file -
+web: gunicorn tryvan.wsgi
