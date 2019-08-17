@@ -7,7 +7,18 @@
 {% load crispy_forms_tags %}
     <section class="callaction-area relative section-gap">
 				<div class="overlay overlay-bg"></div>
-				<div class="container">
+
+        <div class="container">
+       <div class="row justify-content-center">
+<div class="col-lg-10">
+<h1 class="text-white">Contact Us</h1><br>
+    <h4 class="text-white">+919995446165</h4>
+<h4 class="text-white">conferencesociology2019@gmail.com</h4>
+<h4 class="text-white">Karyavattom Campus</h4>
+
+
+</div>
+</div>
 
 				</div>
 			</section>
@@ -17,20 +28,14 @@
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-70 col-lg-8">
 							<div class="title text-center">
-								<h1 class="mb-10">Contact Page</h1>
+{#								<h1 class="mb-10">Contact Page</h1>#}
 								<p>{% now "jS F Y H:i" %}</p>
 
 							</div>
 						</div>
 					</div>
 		 <div class="row">
-             <div class='col-md-4 col-5'>
 
-<h4>+919995446165</h4><hr>
-<h4>conferencesociology2019@gmail.com</h4><hr>
-<h4>Karyavattom Campus</h4><hr>
-
-             </div>
             <div class='col-sm-8 col-5'>
             <form method='POST'> {% csrf_token %}
               {{ form|crispy }}

@@ -21,6 +21,7 @@ from . import views
 
 urlpatterns = [
     path('',views.index,name="index"),
+    path('guide/',views.guide,name="guide"),
     path('contact/',views.RegisterVistor.as_view(),name="contact"),
-    path('paper/',views.RegisterPaper.as_view(),name="paper"),
+    path('paper/',views.model_form_upload,name="paper"),
 ]
